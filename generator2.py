@@ -7,16 +7,24 @@ dats_mas = json.load(file2)
 datchik1 = dats_mas[0]
 dat1_lib = {}
 datchik2 = dats_mas[1]
+dat2_lib = {}
 datchik3 = dats_mas[2]
+dat3_lib = {}
 datchik4 = dats_mas[3]
+dat4_lib = {}
 
-print(datchik1)
-print(datchik2)
-print(datchik3)
-print(datchik4)
+fignya = []
 
-for i in range(0,len(datchik1)):
-    dat1_lib
+
+
+
+
+
+
+print(dat1_lib)
+print(dat2_lib)
+print(dat3_lib)
+print(dat4_lib)
 
 
 
