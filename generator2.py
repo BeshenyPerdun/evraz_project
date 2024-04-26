@@ -2,6 +2,7 @@ import json
 import datetime
 from datetime import date
 import random
+import time
 
 file2 = open('gfile.json', 'r', encoding='utf-8')
 
@@ -16,34 +17,39 @@ dat13_lib = {}
 datchik14 = dats_mas[3]
 dat14_lib = {}
 
+errors =0
+
+def dats():
+    data = date.today()
+    # year = data[0:4]-
+    # print(year)
+    delta = datetime.timedelta(random.randint(0,7))
+    rd = data - delta
+    return rd
 fignya = []
 
+# while True:
 for i in range(10):
     data = {}
-    data['cex'] = str(random.randint(1,10))
-    data['datchik'] = str(random.randint(1,10))
-
-    data['date'] = '2024-04-24'
-    b = random.randint(1, 3)
-    if b == 1 or b == 2:
+    data['Цех'] = str(random.randint(1,10))
+    data['Датчик'] = str(random.randint(1,10))
+    dats2 = dats()
+    data['Дата'] = str(dats2)
+    b = random.randint(1, 4)
+    if b == 1 or b == 2 or b == 3:
         data['Значение'] = str(random.randint(30, 100))
-    elif b == 3:
+    elif b == 4:
         data['Значение'] = str(random.randint(1000, 100000))
+        errors += 1
     fignya.append(data)
+    print(data)
+    time.sleep(2)
+
+
 
 print(fignya)
-print(date.today())
+print(errors)
 
 
 
 
-
-
-print(dat11_lib)
-print(dat12_lib)
-print(dat13_lib)
-print(dat14_lib)
-
-
-
-print(dats_mas)
