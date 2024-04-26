@@ -28,8 +28,7 @@ def dats():
     return rd
 fignya = []
 
-# while True:
-for i in range(10):
+for i in range(20):
     data = {}
     data['Цех'] = str(random.randint(1,10))
     data['Датчик'] = str(random.randint(1,10))
