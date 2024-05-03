@@ -8,20 +8,22 @@ file2 = open('gfile.json', 'r', encoding='utf-8')
 
 dats_mas = json.load(file2)
 
-
 errors = 0
+
 
 def dats():
     data = date.today()
-    delta = datetime.timedelta(random.randint(0,7))
+    delta = datetime.timedelta(random.randint(0, 7))
     rd = data - delta
     return rd
+
+
 fignya = []
 
 for i in range(20):
     data = {}
-    data['Цех'] = str(random.randint(1,10))
-    data['Датчик'] = str(random.randint(1,10))
+    data['Цех'] = str(random.randint(1, 10))
+    data['Датчик'] = str(random.randint(1, 10))
     dats2 = dats()
     data['Дата'] = str(dats2)
     b = random.randint(1, 4)
@@ -37,10 +39,5 @@ for i in range(20):
     file.close()
     time.sleep(3)
 
-
 print(fignya)
 print(errors)
-
-
-
-
