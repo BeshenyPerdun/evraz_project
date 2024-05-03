@@ -21,8 +21,6 @@ errors = 0
 
 def dats():
     data = date.today()
-    # year = data[0:4]-
-    # print(year)
     delta = datetime.timedelta(random.randint(0,7))
     rd = data - delta
     return rd
@@ -43,7 +41,7 @@ for i in range(20):
     fignya.append(data)
     print(data)
     file = open('file.json', 'w', encoding='utf-8')
-    json.dump(data, file, ensure_ascii=False)
+    json.dump(fignya, file, ensure_ascii=False)
     file.close()
     time.sleep(3)
 
