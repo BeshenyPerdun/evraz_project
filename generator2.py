@@ -8,14 +8,6 @@ file2 = open('gfile.json', 'r', encoding='utf-8')
 
 dats_mas = json.load(file2)
 
-datchik11= dats_mas[0]
-dat11_lib = {}
-datchik12 = dats_mas[1]
-dat12_lib = {}
-datchik13 = dats_mas[2]
-dat13_lib = {}
-datchik14 = dats_mas[3]
-dat14_lib = {}
 
 errors = 0
 
