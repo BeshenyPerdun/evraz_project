@@ -17,7 +17,7 @@ dat13_lib = {}
 datchik14 = dats_mas[3]
 dat14_lib = {}
 
-errors =0
+errors = 0
 
 def dats():
     data = date.today()
@@ -42,8 +42,10 @@ for i in range(20):
         errors += 1
     fignya.append(data)
     print(data)
-    time.sleep(2)
-
+    file = open('file.json', 'w', encoding='utf-8')
+    json.dump(data, file, ensure_ascii=False)
+    file.close()
+    time.sleep(3)
 
 
 print(fignya)
