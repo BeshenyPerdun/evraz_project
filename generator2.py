@@ -27,11 +27,11 @@ for i in range(20):
     dats2 = dats()
     data['Дата'] = str(dats2)
     b = random.randint(1, 4)
-    if b == 1 or b == 2 or b == 3:
-        data['Значение'] = str(random.randint(30, 100))
-    elif b == 4:
-        data['Значение'] = str(random.randint(1000, 100000))
-        errors += 1
+    # if b == 1 or b == 2 or b == 3:
+    data['Значение'] = str(random.randint(30, 100))
+    # elif b == 4:
+    #     data['Значение'] = str(random.randint(1000, 100000))
+    #     errors += 1
     fignya.append(data)
     print(data)
     file = open('file.json', 'w', encoding='utf-8')
