@@ -22,13 +22,19 @@ fignya = []
 
 for i in range(20):
     data = {}
-    data['Цех'] = str(random.randint(1, 10))
-    data['Датчик'] = str(random.randint(1, 10))
+    cex2 = random.randint(1, 3)
+    if cex2 == 1:
+        data['cex'] = 'цех химического улавливания'
+    elif cex2 == 2:
+        data['cex'] = 'смолоперерабатывающий цех'
+    else:
+        data['cex'] = 'углеподготовительный цех'
+    data['datchik'] = str(random.randint(1, 4)) + '.' + str(cex2)
     dats2 = dats()
-    data['Дата'] = str(dats2)
+    data['date'] = str(dats2)
     b = random.randint(1, 4)
     # if b == 1 or b == 2 or b == 3:
-    data['Значение'] = str(random.randint(30, 100))
+    data['znachenie'] = str(random.randint(30, 100))
     # elif b == 4:
     #     data['Значение'] = str(random.randint(1000, 100000))
     #     errors += 1
